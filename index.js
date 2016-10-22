@@ -23,9 +23,7 @@ router.get("/contact",function(req,res){
 });
 
 router.all("/employee",function(req,res){
-  var jsonData  = reqParser.getEmployeeData(req,res);
-  res.writeHead("200",{"Content-Type": "application/json"});
-  res.end(JSON.stringify(jsonData));
+ 	reqParser.getEmployeeData(req,res);
 });
 
 app.use("/",router);
