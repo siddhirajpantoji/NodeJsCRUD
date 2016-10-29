@@ -22,7 +22,7 @@ router.get("/contact",function(req,res){
   res.sendFile(path + "contacts.html");
 });
 
-router.all("/employee",function(req,res){
+router.post("/employee",function(req,res){
  	reqParser.getEmployeeData(req,res);
 });
 
