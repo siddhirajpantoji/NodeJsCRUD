@@ -26,6 +26,10 @@ router.post("/employee",function(req,res){
  	reqParser.getEmployeeData(req,res);
 });
 
+router.get("/getUploadPage",function(req,res){
+  res.sendFile(path + "uploadPage.html");
+});
+
 app.use("/",router);
 
 app.use("*",function(req,res){
