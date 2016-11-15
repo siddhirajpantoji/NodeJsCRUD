@@ -17,7 +17,7 @@ $(document).ready(function() {
               dataToAppend =   dataToAppend+"<td>"+jsonData[countOfRows].employee_dob+"</td>";
               dataToAppend =   dataToAppend +"</tr>";
             }
-            $("#dataTableBody").append(dataToAppend);
+            $("#dataTableBody").append(dataToAppend);	
         }
     });
 });
